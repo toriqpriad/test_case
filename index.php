@@ -57,7 +57,6 @@ $response = $kernel->handle(
 );
 
 $response->send();
-
 $kernel->terminate($request, $response);
 
 function time_indo_format($tanggal = FALSE, $format = FALSE)
