@@ -10,7 +10,6 @@
 define('LARAVEL_START', microtime(TRUE));
 
 use Carbon\Carbon;
-
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
