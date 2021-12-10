@@ -1,0 +1,12 @@
+JWT:
+  ALGORITMA: HS256
+  KEY: S6G0JuIswF
+  EXPIRED: 1
+
+UPLOAD_DIR:
+  ranah: ranah/image/
+  jenis_gaya: jenis_gaya/image/
+  survei: survei/thumbnail/
+
+SYSTEM:
+  email_sender: toriqpriad@gmail.com

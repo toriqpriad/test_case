@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "d67bc4c2-6a5d-427d-a05f-79a587c1876f",
+		"name": "Majoo Test Endpoint",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Merchant - Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "admin1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/majoo_test_case/api/submit-login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"majoo_test_case",
+						"api",
+						"submit-login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Merhcnat - Fetch My Omzet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtZSI6IkFkbWluIDEiLCJ1c2VyX25hbWUiOiJhZG1pbjEiLCJjcmVhdGVkX2F0IjoiMjAyMS0xMi0wOSAwOToxOTo0MyIsImNyZWF0ZWRfYnkiOjEsInVwZGF0ZWRfYXQiOiIyMDIxLTEyLTA5IDA5OjE5OjQzIiwidXBkYXRlZF9ieSI6MSwibWVyY2hhbnRfZGF0YSI6eyJpZCI6MSwidXNlcl9pZCI6MSwibWVyY2hhbnRfbmFtZSI6Im1lcmNoYW50IDEiLCJjcmVhdGVkX2F0IjoiMjAyMS0xMi0wOSAwOToxOTo0NCIsImNyZWF0ZWRfYnkiOjEsInVwZGF0ZWRfYXQiOiIyMDIxLTEyLTA5IDA5OjE5OjQ0IiwidXBkYXRlZF9ieSI6MX0sImV4cGlyZWRfdG9rZW5fYXQiOiIyMDIxLTEyLTEwIDEwOjM4OjA2In0.QhqEkhHcT2dHienIZEcKY4_G4g_8I4rQI6qr6otzZCk",
+							"type": "text"
+						},
+						{
+							"key": "merchant_id",
+							"value": "1",
+							"description": "isi dengan merchant id yang sedang logn",
+							"type": "text"
+						},
+						{
+							"key": "start_date",
+							"value": "2021-11-01",
+							"type": "text"
+						},
+						{
+							"key": "end_date",
+							"value": "2021-11-30",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/majoo_test_case/api/merchant/omzet/fetch-my-omzet?page_number=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"majoo_test_case",
+						"api",
+						"merchant",
+						"omzet",
+						"fetch-my-omzet"
+					],
+					"query": [
+						{
+							"key": "page_number",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Merhcnat - Fetch My Outlet Omzet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtZSI6IkFkbWluIDEiLCJ1c2VyX25hbWUiOiJhZG1pbjEiLCJjcmVhdGVkX2F0IjoiMjAyMS0xMi0wOSAwOToxOTo0MyIsImNyZWF0ZWRfYnkiOjEsInVwZGF0ZWRfYXQiOiIyMDIxLTEyLTA5IDA5OjE5OjQzIiwidXBkYXRlZF9ieSI6MSwibWVyY2hhbnRfZGF0YSI6eyJpZCI6MSwidXNlcl9pZCI6MSwibWVyY2hhbnRfbmFtZSI6Im1lcmNoYW50IDEiLCJjcmVhdGVkX2F0IjoiMjAyMS0xMi0wOSAwOToxOTo0NCIsImNyZWF0ZWRfYnkiOjEsInVwZGF0ZWRfYXQiOiIyMDIxLTEyLTA5IDA5OjE5OjQ0IiwidXBkYXRlZF9ieSI6MX0sImV4cGlyZWRfdG9rZW5fYXQiOiIyMDIxLTEyLTEwIDEwOjM4OjA2In0.QhqEkhHcT2dHienIZEcKY4_G4g_8I4rQI6qr6otzZCk",
+							"type": "text"
+						},
+						{
+							"key": "outlet_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "start_date",
+							"value": "2021-11-01",
+							"type": "text"
+						},
+						{
+							"key": "end_date",
+							"value": "2021-11-30",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/majoo_test_case/api/merchant/omzet/fetch-my-outlet-omzet?page_number=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"majoo_test_case",
+						"api",
+						"merchant",
+						"omzet",
+						"fetch-my-outlet-omzet"
+					],
+					"query": [
+						{
+							"key": "page_number",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
